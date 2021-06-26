@@ -9,6 +9,7 @@
   --color-studio: #0000;
   --card-content-border:  #EEEEEE;
   --company-social-color: #AFB1B8;
+  --box-shadow-btn: rgba(0, 0, 0, 0.15);
       }       
   
  .html {
@@ -211,7 +212,7 @@
       letter-spacing: 0.06em;
       background: var(--color-button-logo); 
       color: var(--white-color);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 4px 4px var(--box-shadow-btn);
       border-radius: 4px;
       border: none;
       cursor: pointer;
@@ -763,9 +764,7 @@
        outline: none;
       transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.form-input:focus{     
-     border: 2px solid var(--color-button-logo);      
-} 
+
 textarea:focus{
      border: 2px solid var(--color-button-logo); 
 }  
@@ -780,6 +779,9 @@ textarea:focus{
        left: 15px;       
        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-input:focus{     
+     border: 2px solid var(--color-button-logo);      
+} 
 .form-input:focus + .form-icon{
      fill: var(--color-button-logo);                   
 }
