@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head > 
 <body>
-    <header>                       
+    <header class="header">                       
         <div class="conteiner">
             <nav class="sait-nav"> 
                   <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>                 
@@ -26,9 +26,10 @@
                       <a href="" class="link">Контакты</a>
                   </li>
               </ul>
+            </nav> 
               <ul class="sait-contacts">
                   <li >                                      
-                        <a href="mail:info@devstudio.com" class="link mail" >
+                        <a href="mailto:info@devstudio.com" class="link mail" >
                         <svg class="connect icon-mail">
                         <use href="./images/icon/sprite.svg#icon-mail"></use>
                       </svg>
@@ -42,7 +43,7 @@
                         +38 096 111 11 11</a>                   
                   </li>
               </ul>                 
-          </nav> 
+         
         </div>    
       </header>
       <main>        
@@ -53,54 +54,44 @@
               <button data-modal-open  class="but" type="button">Заказать услугу</button>            
               </div>                     
           </section>  
-                <!-- Особенности -->
-                <section class="feature-group">
-                  <div class="conteiner">
-                    <ul class="feature-columns">
-                      <li class="gpoup-icon">
-                        <svg class="group">
-                          <use href="./images/icon/sprite.svg#icon-group1" ></use>
-                        </svg>
-                      </li>
-                      <li class="gpoup-icon">
-                        <svg class="group">
-                          <use href="./images/icon/sprite.svg#icon-group2" ></use>
-                        </svg>
-                      </li>
-                      <li class="gpoup-icon">
-                        <svg class="group">
-                          <use href="./images/icon/sprite.svg#icon-group3" ></use>
-                        </svg>
-                      </li>
-                      <li class="gpoup-icon">
-                        <svg class="group">
-                          <use href="./images/icon/sprite.svg#icon-group4" ></use>
-                        </svg>
-                      </li>
-                    </ul>
-                  </div>
-                </section>
-          <section class="feature">
+                <!-- Особенности -->               
+          <section class="feature-group">
               <div class="conteiner">
               <!-- <h2></h2> -->            
               <ul class="columns">               
                   <li>
-                    
+                    <div class="gpoup-icon">
+                      <svg class="group">
+                        <use href="./images/icon/sprite.svg#icon-group1" ></use>
+                      </svg>
+                    </div>
                       <h3 class="feature-title">Внимание к деталям</h3>
                       <p class="feature-text">Идейные  соображения, а также начало повседневной работы по формированию позиции.</p>
                   </li>
                   <li>
-                    
+                    <div class="gpoup-icon">
+                      <svg class="group">
+                        <use href="./images/icon/sprite.svg#icon-group2" ></use>
+                      </svg>
+                    </div>
                       <h3 class="feature-title">Пунктуальность</h3>
                       <p class="feature-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                   </li>
                   <li>
-                    
+                    <div class="gpoup-icon">
+                      <svg class="group">
+                        <use href="./images/icon/sprite.svg#icon-group3" ></use>
+                      </svg>
+                    </div>
                       <h3 class="feature-title">Планирование</h3>
                       <p class="feature-text" >Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                   </li>
                   <li>
-                    
+                    <div class="gpoup-icon">
+                      <svg class="group">
+                        <use href="./images/icon/sprite.svg#icon-group4" ></use>
+                      </svg>
+                    </div>
                       <h3 class="feature-title">Современные технологии</h3>
                       <p class="feature-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                   </li>                
@@ -358,18 +349,18 @@
               <a href="" class="link contacts"> г. Киев, пр-т Леси Украинки, 26</a>
           </address> 
         <ul class="footer-contacts">
-          <li>
+          <li class="footer-list">
             <a href="mail:info@devstudio.com" class="link mail">info@devstudio.com</a>
           </li>
-          <li>
+          <li class="footer-list">
             <a href="tel:+380961111111" class="link phone">+38 096 111 11 11</a>
           </li>
         </ul>
         </ul>
         </div>
 
-        <div class="footer-join">
-          <section class="join">                  
+          <div class="footer-join">
+           <section class="join">                  
             <h3 class="title-join">присоединяйтесь</h3>
             <ul class="footer-social" >
               <li class="list-social">            
@@ -402,8 +393,8 @@
               </li>
             </ul>
             </section>
-            </div>
-            <div> 
+          </div>
+          <!-- <div>  -->
             <section class="footer-subscribe">
               <h3 class="title-subscribe">Подпишитесь на рассылку</h3>
               <div class="subscribe"> 
@@ -419,9 +410,9 @@
               </form>
               </div>
             </section>
-            </div>
+          </div>
 
-          </div>                
+      </div>                
     </footer>
       
 
@@ -473,47 +464,7 @@
           <button type="submit" class="form-btn">Отправить</button>
           </div>    
        </form>
-
-
-        <!-- <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="form-modal">          
-          <div class="form-group">
-            <label for="name" class="modal-label">Имя</label>
-            <input type="text" name="name-user" id="name" class="form-input"/>
-            <svg class="modal-icon">
-              <use href="./images/icon/sprite.svg#icon-person"></use>
-            </svg>                                         
-         </div>
-
-         <div class="form-group">
-         <label for="phone"class="modal-label" >Телефон</label>
-         <input type="tel" name="phone" id="phone" class="form-input" />
-         <svg class="modal-icon">
-          <use href="./images/icon/symbol-defs.svg#icon-phone"></use>
-        </svg> 
-         </div>
-
-         <div class="form-group">
-         <label for="mail" class="modal-label">Почта</label>
-         <input type="email" name="mail" id="mail" class="form-input"/>
-         <svg class="modal-icon">
-          <use href="./images/icon/sprite.svg#icon-email_black"></use>
-        </svg> 
-         </div>
-
-         <div class="form-comment">
-         <label for="comment" class="modal-label">Комментарий</label>
-         <textarea name="comment" id="comment" class="form-textarea"></textarea>
-         </div>     
-          <div class="form-polisy">        
-         <label class="contract" ><input type="checkbox" class="checkbox" name="policy"  />
-          <span class="icon-check">  </span> Соглашаюсь с рассылкой и принимаю      
-         <a href="">Условия договора</a></label>
-         </div > 
-         <div class="button-wrapper">
-         <button type="submit" class="form-btn">Отправить</button>
-         </div> 
-       </form>  -->
+        
    </div>
   </div>  
    
