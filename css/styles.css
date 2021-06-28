@@ -49,20 +49,20 @@
       list-style: none;      
  } */
  /* свойства контейнера */
- .conteiner{  
+    /* .conteiner{  
       box-sizing: border-box;      
       width: 1200px;
       margin: 0 auto;
       padding: 0 15px;      
- }
+ }    */
  /* свойства body */
- body { 
+   /* body { 
       
       font-family: Roboto;
       font-style: normal;
       background-color: var(--white-color);
       color: var(--main-text-color);
- } 
+ }    */
  /* свойства для все ссылок */
  /* a{
      color:inherit;
@@ -72,7 +72,7 @@
  /* address{
       font-style: inherit;
  } */
- .link{ 
+  /* .link{ 
      padding-top: 32px;
      padding-bottom: 32px;     
       font-style: normal;
@@ -86,7 +86,7 @@
  .link:hover, 
  .link:focus{
      color: var(--color-button-logo);
- }   
+ }     */
  /* свойства картинок */
  /* img{
       display: block;
