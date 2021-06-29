@@ -35,9 +35,15 @@
   --subscribe-email-bgr: #2F303A;
   --socialy-svg-bgr: rgba(153, 129, 129, 0.1);
   --group-bgr: #F5F4FA;
+  --font-size-text: 14px;
+  --letter-spacing-text: 0.03em;
+  --font-size-btn: 16px;
+  --letter-spacing-btn: 0.06em;
+  --font-weight-bold: bold;
+  --font-style-normal: normal;
       }       
   
- /* html {
+ .html {
       box-sizing: border-box;
  }
  *,*::before,*::after{
@@ -47,37 +53,36 @@
       margin: 0;
       padding: 0;
       list-style: none;      
- } */
+ }
  /* свойства контейнера */
-    /* .conteiner{  
+ .conteiner{  
       box-sizing: border-box;      
       width: 1200px;
       margin: 0 auto;
       padding: 0 15px;      
- }    */
+ }
  /* свойства body */
-   /* body { 
-      
+ body {       
       font-family: Roboto;
-      font-style: normal;
+      font-style: var(--font-style-normal);
       background-color: var(--white-color);
       color: var(--main-text-color);
- }    */
+ } 
  /* свойства для все ссылок */
- /* a{
+ a{
      color:inherit;
      text-decoration: none;            
      font-family: inherit; 
- } */
- /* address{
+ }
+ address{
       font-style: inherit;
- } */
-  /* .link{ 
+ }
+ .link{ 
      padding-top: 32px;
      padding-bottom: 32px;     
-      font-style: normal;
+      font-style: var(--font-style-normal);
       font-weight: 500;
-      font-size: 14px;
+      font-size: var(--font-size-text);
       line-height: 1.143;
       letter-spacing: 0.02em;
       color: var(--main-color-headers);
@@ -86,13 +91,13 @@
  .link:hover, 
  .link:focus{
      color: var(--color-button-logo);
- }     */
+ }   
  /* свойства картинок */
- /* img{
+ img{
       display: block;
       max-width: 100%;
       height: auto;
- }  */
+ } 
  /* навигация */
    .sait-nav {  
       display: flex;
@@ -114,7 +119,7 @@
  .sait-nav__logo
   {
      font-family: Raleway;
-     font-weight: bold;
+     font-weight: var(--font-weight-bold);
      font-size: 26px;
      line-height: 1.192;    
      text-decoration: none;
@@ -161,7 +166,7 @@
       display: flex;
       align-items: center;      
       font-weight: 500;
-      font-size: 14px;
+      font-size: var(--font-size-text);
       line-height: 1.142;
       letter-spacing: 0.02em; 
       color: var(--main-text-color);       
@@ -211,15 +216,15 @@
  .hero__but{ 
       margin: 0 auto;
       font-family: Roboto;
-      font-style: normal;
+      font-style: var(--font-style-normal);
       font-weight: bold;
-      font-size: 16px;
+      font-size: var(--font-size-btn);
       line-height: 1.875;
       padding: 10px 32px; 
       display: flex;
       align-items: center;
       text-align: center;
-      letter-spacing: 0.06em;
+      letter-spacing: var(--letter-spacing-btn);
       background: var(--color-button-logo); 
       color: var(--white-color);
       box-shadow: 0px 4px 4px var(--box-shadow-btn);
@@ -254,10 +259,10 @@
      display: flex;
  }
  .feature__title{
-      font-weight: bold;
-      font-size: 14px;
+      font-weight: var(--font-weight-bold);
+      font-size: var(--font-size-text);
       line-height: 1.172;
-      letter-spacing: 0.03em;
+      letter-spacing: var(--letter-spacing-text);
       text-transform: uppercase;
       color: var(--main-color-headers);
       margin-bottom: 10px;
@@ -265,9 +270,9 @@
  .feature__text{
       width: 270px;
       font-weight: normal;
-      font-size: 14px;
+      font-size: var(--font-size-text);
       line-height: 1.714; 
-      letter-spacing: 0.03em; 
+      letter-spacing: var(--letter-spacing-text); 
  }
  /* Чем занимаемся */
  .work{
@@ -278,11 +283,11 @@
 .work__title,
 .team__title,
 .client__title{
-     font-weight: bold;
+     font-weight: var(--font-weight-bold);
      font-size: 36px;
      line-height: 1.167;
      text-align: center;
-     letter-spacing: 0.03em;
+     letter-spacing: var(--letter-spacing-text);
      color: var(--main-color-headers);
      margin-bottom: 50px;
 } 
@@ -302,16 +307,17 @@
       width: 100%;
       height: 70px;
       background: var(--work-case);
-  }
- .work__title{
-     font-weight: bold;
-     font-size: 14px;
+  } 
+ .work__text{
+     font-weight: var(--font-weight-bold);
+     font-size: var(--font-size-text);
      line-height: 1.143;
      text-align: center;
-     letter-spacing: 0.03em;
+     letter-spacing: var(--letter-spacing-text);
      text-transform: uppercase;
      color: var(--white-color);
  }
+ 
   /* Команда */
   .team{     
       background: var(--team-filter-btn-bg);
@@ -337,7 +343,7 @@
       font-weight: 500;
       font-size: 16px;
       line-height: 1.188;       
-      letter-spacing: 0.03em;    
+      letter-spacing: var(--letter-spacing-text);    
       color: var(--main-color-headers);
       text-align: center;     
  }
@@ -345,7 +351,7 @@
       font-weight: normal;
       font-size: 16px;
       line-height: 1.187;
-      letter-spacing: 0.03em;
+      letter-spacing: var(--letter-spacing-text);
       text-align: center;     
       margin-top: 10px;    
  }
@@ -424,7 +430,7 @@
  }
  .footer-nav__logo{
      font-family: Raleway;
-     font-weight: bold;
+     font-weight: var(--font-weight-bold);
      font-size: 26px;
      line-height: 1.192;    
      text-decoration: none;    
@@ -445,10 +451,10 @@
  .footer-join__title{
       text-transform: uppercase;
       color: var(--white-color);
-      font-weight: bold;
-      font-size: 14px;
+      font-weight: var(--font-weight-bold);
+      font-size: var(--font-size-text);
       line-height: 1.142;             
-      letter-spacing: 0.03em;
+      letter-spacing: var(--letter-spacing-text);
       margin-bottom: 20px;
  } 
  .social__icon{     
@@ -483,16 +489,16 @@
 
  .footer-nav__mail{
      font-weight: normal;
-      font-size: 14px;
+      font-size: var(--font-size-text);
       line-height: 1.714;
-      letter-spacing: 0.03em;
+      letter-spacing: var(--letter-spacing-text);
       color:  var(--footer-phone-mail);     
  }
  .footer-nav__phone{
       font-weight: normal;
-      font-size: 14px;
+      font-size: var(--font-size-text);
       line-height: 1.714;
-      letter-spacing: 0.03em;
+      letter-spacing: var(--letter-spacing-text);
       color:  var(--footer-phone-mail);       
  }  
 .footer-nav__address{
@@ -500,9 +506,9 @@
  }  
  .footer-nav__contacts {  
       font-weight: normal;
-      font-size: 14px;
+      font-size: var(--font-size-text);
       line-height: 1.714;     
-      letter-spacing: 0.03em; 
+      letter-spacing: var(--letter-spacing-text); 
       color: var(--white-color);         
  }
  .footer-nav__list{
@@ -523,8 +529,8 @@
      margin-bottom: 20px;
      text-align: left;
     align-self: start;
-    font-style: bold;
-    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-text);
     line-height: 1.143;
     color: var(--white-color);
     text-transform: uppercase;
@@ -550,9 +556,11 @@
   .subscribe__btn{
       display: flex;
       align-items: center;
-      font-size: 16px;
+      font-style: var(--font-style-normal);
+      font-size: var(--font-size-btn);
+      font-weight: var(--font-weight-bold);
       line-height: 1.875;
-      letter-spacing: 0.06em;
+      letter-spacing: var(--letter-spacing-btn);
       text-align: justify;
       cursor: pointer;
       border: none;
@@ -576,12 +584,12 @@
   /* Выбор проектов */  
 .portfolio__btn{
       font-family: Roboto;
-      font-style: normal;
+      font-style: var(--font-style-normal);
       font-weight: 500;
-      font-size: 16px;
+      font-size: var(--font-size-btn);
       line-height: 1.625;
       text-align: center;
-      letter-spacing: 0.03em;
+      letter-spacing: var(--letter-spacing-text);
       background-color: var(--team-filter-btn-bg);
       color: var(--main-color-headers); 
       padding: 6px 22px;
@@ -633,7 +641,7 @@
  }
  
  .content__item{
-      font-weight: bold;
+      font-weight: var(--font-weight-bold);
       font-size: 18px;
       line-height: 2.000;
       letter-spacing: 0.06em;
@@ -644,7 +652,7 @@
       font-weight: normal;
       font-size: 16px;
       line-height: 1.875;      
-      letter-spacing: 0.03em;
+      letter-spacing: var(--letter-spacing-text);
       color: var(--main-text-color);
       margin-top: 4px;
       text-decoration: none;
@@ -673,7 +681,7 @@
  .card__text{      
       font-size: 18px;
       line-height: 1.555; 
-      letter-spacing: 0.03em;
+      letter-spacing: var(--letter-spacing-text);
       margin: 63px 24px;
       color: var(--white-color);     
   }  
@@ -746,10 +754,10 @@
      margin-bottom: 4px;  
 }
 .modal__title{
-     font-weight: bold;
+     font-weight: var(--font-weight-bold);
      font-size: 20px;
      line-height: 1.150;
-     letter-spacing: 0.03em;
+     letter-spacing: var(--letter-spacing-text);
      text-align: center;     
      margin-bottom: 12px;
      color: var(--main-color-headers);
@@ -831,21 +839,21 @@
 .modal__consent{
       display: flex; 
      align-items: center;     
-     font-size: 14px;
+     font-size: var(--font-size-text);
      line-height: 1.71;
      color: var(--main-text-color);
 }
  .modal__contract{
-     font-size: 14px;
+     font-size: var(--font-size-text);
      line-height: 1.714;
-     letter-spacing: 0.03;
+     letter-spacing: var(--letter-spacing-text);
      color: var(--color-button-logo);
      text-decoration: underline;  
 } 
 .modal__btn{
-     font-size: 16px;
+     font-size: var(--font-size-btn);
      line-height: 1.875;
-     letter-spacing: 0.06em;
+     letter-spacing: var(--letter-spacing-btn);
      text-align: center;
      cursor: pointer;
      border-radius: 4px;
