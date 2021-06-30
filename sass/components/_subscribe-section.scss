@@ -33,10 +33,11 @@
     box-shadow: $subscribe-email-shadow;
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.subscribe__email:hover,
-.subscribe__email:focus {
- border: 1px solid $color-button-logo;
+
+     &:hover,
+     &:focus {
+     border: 1px solid $color-button-logo;
+     }
 }
  .subscribe__btn{
      display: flex;
@@ -57,7 +58,8 @@
      margin-left: 12px;    
      min-width: 200px;
      height: 50px; 
-     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+         
 }  
  .subscribe__icon{
     display: inline-flex; 

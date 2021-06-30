@@ -25,15 +25,21 @@
     margin-top: 4px;
     padding: 12px 12px 12px 42px;
     font: inherit;
-      border-radius: 3px;
-      border: 2px solid $border-modal-input;
-      outline: none;
-     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    border-radius: 3px;
+    border: 2px solid $border-modal-input;
+    outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+   &:hover,
+   &:focus{
+    border: 2px solid $color-button-logo;  
+   }
+
+   &:hover + .modal__icon,
+   &:focus + .modal__icon{
+    fill: $color-button-logo;                   
 }
-.modal__textarea:hover,
-.modal__textarea:focus{
-    border: 2px solid $color-button-logo; 
-}        
+}      
 .modal__icon{
     position: absolute; 
      display: inline-block;
@@ -43,14 +49,6 @@
      top: 50%;
       left: 15px;       
       transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__input:hover,
-.modal__input:focus{     
-    border: 2px solid $color-button-logo;      
-}
-.modal__input:hover + .modal__icon,
-.modal__input:focus + .modal__icon{
-    fill: $color-button-logo;                   
 }
 .modal__textarea{
     display: block;
@@ -62,6 +60,11 @@
     margin-top: 4px;      
     border: none;
     outline: 2px solid $modal-textarea-outline;
+
+    &:hover,
+    &:focus{
+        border: 2px solid $color-button-logo; 
+    }        
 }
 .modal__polisy{
     display: flex;
@@ -69,7 +72,21 @@
     flex-direction: row;     
 }
 .modal__checkbox{     
-    appearance: none;       
+    appearance: none;  
+    
+    &:hover + .modal__icon--check,
+    &:focus + .modal__icon--check{
+        border: 1px solid $color-button-logo;
+     border-radius: 2px;
+    }
+
+    &:checked +.modal__icon--check{
+        background-image: url("../images/icon/check.svg");
+        background-color: $color-button-logo;  
+         background-repeat: no-repeat; 
+        background-position: center;
+        background-origin: border-box; 
+    }
 }
 .modal__icon--check{
     display: inline-block;
@@ -81,18 +98,6 @@
    margin-right: 9px;
    margin-left: 14px;                
 }
-.modal__checkbox:hover +.modal__icon--check,
-.modal__checkbox:focus +.modal__icon--check{
-    border: 1px solid $color-button-logo;
-    border-radius: 2px;
-} 
-.modal__checkbox:checked +.modal__icon--check{
-    background-image: url("../images/icon/check.svg");
-    background-color: $color-button-logo;  
-     background-repeat: no-repeat; 
-    background-position: center;
-    background-origin: border-box; 
-} 
 .modal__consent{
      display: flex; 
     align-items: center;     

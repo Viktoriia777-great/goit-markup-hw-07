@@ -51,9 +51,7 @@ address {
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.link:hover,
-.link:focus {
+.link:hover, .link:focus {
   color: #2196F3;
 }
 
@@ -113,12 +111,11 @@ img {
   margin-right: 50px;
 }
 
-.sait-nav__link--active {
+.sait-nav--active {
   position: relative;
   color: #2196F3;
 }
-
-.sait-nav__link--active::after {
+.sait-nav--active::after {
   position: absolute;
   bottom: 0;
   display: block;
@@ -130,8 +127,7 @@ img {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.sait-nav__link--active:hover::after {
+.sait-nav--active:hover::after {
   opacity: 1;
   background-color: #2196F3;
 }
@@ -163,6 +159,9 @@ img {
   height: 12px;
   margin-right: 10px;
 }
+.sait-nav__icon--mail:hover, .sait-nav__icon--mail:focus {
+  fill: #2196F3;
+}
 
 .sait-nav__icon--phone {
   width: 10px;
@@ -170,9 +169,7 @@ img {
   fill: currentColor;
   margin-right: 10px;
 }
-
-.sait-nav__icon:hover,
-.sait-nav__icon:focus {
+.sait-nav__icon--phone:hover, .sait-nav__icon--phone:focus {
   fill: #2196F3;
 }
 
@@ -244,12 +241,11 @@ img {
   margin-bottom: 30px;
 }
 
-.feature__columns li:not(:last-child) {
-  margin-right: 30px;
-}
-
 .feature__columns {
   display: flex;
+}
+.feature__columns li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .feature__title {
@@ -334,10 +330,6 @@ img {
   padding: 30px 32px;
 }
 
-.social__card:not(:last-child) {
-  margin-right: 10px;
-}
-
 .team__scorecard {
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -373,6 +365,9 @@ img {
   justify-content: center;
   align-items: center;
 }
+.social__card:not(:last-child) {
+  margin-right: 10px;
+}
 
 .social__ref {
   display: inline-flex;
@@ -384,9 +379,7 @@ img {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social__ref:hover,
-.social__ref:focus {
+.social__ref:hover, .social__ref:focus {
   fill: #FFFFFF;
   background-color: #2196F3;
 }
@@ -410,12 +403,6 @@ img {
   align-items: center;
 }
 
-.client-list__link:hover,
-.client-list__link:focus {
-  fill: #2196F3;
-  border: 1px solid #2196F3;
-}
-
 .client-list__link {
   display: flex;
   justify-content: center;
@@ -426,6 +413,10 @@ img {
   border: 1px solid #AFB1B8;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.client-list__link:hover, .client-list__link:focus {
+  fill: #2196F3;
+  border: 1px solid #2196F3;
 }
 
 .client-list__company:not(:last-child) {
@@ -511,12 +502,6 @@ img {
   margin-bottom: 100px;
 }
 
-.socialy__svg:hover,
-.socialy__svg:focus {
-  fill: #FFFFFF;
-  background-color: #2196F3;
-}
-
 .socialy__list:not(:last-child) {
   margin-right: 10px;
 }
@@ -531,6 +516,10 @@ img {
   height: 44px;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socialy__svg:hover, .socialy__svg:focus {
+  fill: #FFFFFF;
+  background-color: #2196F3;
 }
 
 /* Подпишись на рассылку */
@@ -572,9 +561,7 @@ img {
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.subscribe__email:hover,
-.subscribe__email:focus {
+.subscribe__email:hover, .subscribe__email:focus {
   border: 1px solid #2196F3;
 }
 
@@ -626,9 +613,7 @@ img {
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio__btn:hover,
-.portfolio__btn:focus {
+.portfolio__btn:hover, .portfolio__btn:focus {
   background-color: #2196F3;
   color: #FFFFFF;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -710,7 +695,6 @@ img {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .card:hover .card__box {
   transform: translateY(0);
 }
@@ -747,12 +731,6 @@ img {
   height: 581px;
 }
 
-.modal__icon--close {
-  width: 15px;
-  height: 15px;
-  fill: currentColor;
-}
-
 .modal__tape {
   position: absolute;
   right: 8px;
@@ -767,9 +745,12 @@ img {
   cursor: pointer;
   background-color: #FFFFFF;
 }
-
-.modal__tape:hover,
-.modal__tape:focus {
+.modal__tape--close {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+.modal__tape:hover, .modal__tape:focus {
   border-color: #2196F3;
   color: #2196F3;
 }
@@ -821,10 +802,11 @@ img {
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal__textarea:hover,
-.modal__textarea:focus {
+.modal__input:hover, .modal__input:focus {
   border: 2px solid #2196F3;
+}
+.modal__input:hover + .modal__icon, .modal__input:focus + .modal__icon {
+  fill: #2196F3;
 }
 
 .modal__icon {
@@ -838,16 +820,6 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__input:hover,
-.modal__input:focus {
-  border: 2px solid #2196F3;
-}
-
-.modal__input:hover + .modal__icon,
-.modal__input:focus + .modal__icon {
-  fill: #2196F3;
-}
-
 .modal__textarea {
   display: block;
   width: 448px;
@@ -858,6 +830,9 @@ img {
   margin-top: 4px;
   border: none;
   outline: 2px solid rgba(33, 33, 33, 0.2);
+}
+.modal__textarea:hover, .modal__textarea:focus {
+  border: 2px solid #2196F3;
 }
 
 .modal__polisy {
@@ -871,6 +846,17 @@ img {
      -moz-appearance: none;
           appearance: none;
 }
+.modal__checkbox:hover + .modal__icon--check, .modal__checkbox:focus + .modal__icon--check {
+  border: 1px solid #2196F3;
+  border-radius: 2px;
+}
+.modal__checkbox:checked + .modal__icon--check {
+  background-image: url("../images/icon/check.svg");
+  background-color: #2196F3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+}
 
 .modal__icon--check {
   display: inline-block;
@@ -881,20 +867,6 @@ img {
   border-radius: 2px;
   margin-right: 9px;
   margin-left: 14px;
-}
-
-.modal__checkbox:hover + .modal__icon--check,
-.modal__checkbox:focus + .modal__icon--check {
-  border: 1px solid #2196F3;
-  border-radius: 2px;
-}
-
-.modal__checkbox:checked + .modal__icon--check {
-  background-image: url("../images/icon/check.svg");
-  background-color: #2196F3;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-origin: border-box;
 }
 
 .modal__consent {

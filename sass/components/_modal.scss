@@ -20,11 +20,7 @@
      width: 528px;
      height: 581px;
 }
-.modal__icon--close{
-    width: 15px;
-    height: 15px;
-    fill: currentColor;      
-}  
+
 .modal__tape{
    position: absolute;
    right: 8px;
@@ -38,12 +34,19 @@
    border: 1px solid $modal-tape-border;
    cursor: pointer;
    background-color: $white-color;
-} 
-.modal__tape:hover,
-.modal__tape:focus{
+
+   &--close {
+    width: 15px;
+    height: 15px;
+    fill: currentColor; 
+   }
+   &:hover,
+   &:focus{
     border-color: $color-button-logo;
-    color: $color-button-logo;      
-}
+    color: $color-button-logo;  
+   }
+} 
+
 .is-hidden {
    visibility: inherit;
    opacity: 0;

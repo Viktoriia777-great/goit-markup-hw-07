@@ -17,11 +17,11 @@
 .sait-nav__navigation li:not(:last-child){
     margin-right: 50px;
 }
-.sait-nav__link--active {
+.sait-nav--active {
     position: relative;
    color: $color-button-logo;
-}
-.sait-nav__link--active::after{
+
+   &::after{
     position: absolute;
     bottom: 0;
    display: block;
@@ -31,12 +31,15 @@
    background-color: $color-button-logo;
    border-radius: 2px;
     opacity: 1;  
-   transition:  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} 
-  .sait-nav__link--active:hover::after{      
-      opacity: 1; 
-     background-color: $color-button-logo;
+   transition:  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+   }
+
+   &:hover::after{      
+    opacity: 1; 
+   background-color: $color-button-logo;
 }  
+}
+
 .sait-nav__contacts{
     display: flex;
     align-items: center;     
@@ -59,15 +62,21 @@
    fill: currentColor;
    width: 16px;
    height: 12px;
-   margin-right: 10px;    
+   margin-right: 10px; 
+   
+   &:hover,
+   &:focus{
+     fill: $color-button-logo;          
+   }  
 }     
 .sait-nav__icon--phone {
     width: 10px;
     height: 16px; 
     fill: currentColor;
     margin-right: 10px;
+
+    &:hover,
+    &:focus{
+     fill: $color-button-logo;          
+   }  
 }
-.sait-nav__icon:hover,
-.sait-nav__icon:focus{
-  fill: $color-button-logo;          
-}  
