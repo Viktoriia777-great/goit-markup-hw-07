@@ -427,7 +427,6 @@ img {
   display: flex;
   align-items: baseline;
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer {
@@ -471,6 +470,10 @@ img {
 
 .footer-nav__list {
   margin-top: 9px;
+}
+
+.footer-nav__link {
+  margin-bottom: 60px;
 }
 
 /* Присоединяйтесь */
@@ -653,8 +656,10 @@ img {
   border: 1px solid #EEEEEE;
 }
 
-.card__activ:hover,
-.card__activ:focus {
+.card {
+  display: block;
+}
+.card__activ:hover, .card__activ:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
