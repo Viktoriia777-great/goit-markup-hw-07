@@ -402,6 +402,9 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+.client-list--company:not(:last-child) {
+  margin-right: 30px;
+}
 
 .client-list__link {
   display: flex;
@@ -417,10 +420,6 @@ img {
 .client-list__link:hover, .client-list__link:focus {
   fill: #2196F3;
   border: 1px solid #2196F3;
-}
-
-.client-list__company:not(:last-child) {
-  margin-right: 30px;
 }
 
 .footer .conteiner {
@@ -504,8 +503,7 @@ img {
   align-items: center;
   margin-bottom: 100px;
 }
-
-.socialy__list:not(:last-child) {
+.socialy--list:not(:last-child) {
   margin-right: 10px;
 }
 

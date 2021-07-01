@@ -13,6 +13,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &--company:not(:last-child){
+      margin-right: 30px; 
+  }
 }
 
 .client-list__link{
@@ -33,6 +37,3 @@
 }
 }
 
-  .client-list__company:not(:last-child){
-    margin-right: 30px; 
-}
