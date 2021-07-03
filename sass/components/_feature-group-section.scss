@@ -20,7 +20,7 @@
 .feature__columns{
    display: flex;
 
-   & li:not(:last-child){
+   .feature__item:not(:last-child){
     margin-right: 30px;
    }  
 }
