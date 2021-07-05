@@ -56,7 +56,9 @@
     font-size: $font-size-text;
     line-height: 1.142;
     letter-spacing: 0.02em; 
-    color: $main-text-color;       
+    color: $main-text-color; 
+    padding-top: 32px;
+    padding-bottom: 32px;    
 }
 .sait-nav__icon--mail{
    fill: currentColor;
